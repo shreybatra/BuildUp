@@ -7,13 +7,16 @@ from geopy.geocoders import Nominatim
 
 max_dist = 1
 
-client = MongoClient()
-db = client.db
+DB_NAME = 'build_up_pharma'
+DB_HOST = 'ds151259.mlab.com'
+DB_PORT = 51259
+DB_USER = 'admin'
+DB_PASS = 'abcd'
 
-medicines = db.medicines
-users = db.users
+connection = MongoClient(DB_HOST, DB_PORT)
+db = connection[DB_NAME]
+db.authenticate(DB_USER, DB_PASS)
 pharmacies = db.phar
-#medicines.remove()
 
 
 app = Flask(__name__)
