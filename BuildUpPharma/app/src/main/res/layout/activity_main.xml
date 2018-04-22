@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shreybatra.builduppharmacy.MainActivity">
+
+
+    <EditText
+        android:id="@+id/medicine_name0"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Medicine 1" />
+
+    <EditText
+        android:id="@+id/medicine_qty0"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/medicine_name0"
+        android:hint="Quantity"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/medicine_name1"
+        android:layout_below="@+id/medicine_name0"
+
+        android:hint="Medicine 2"/>
+
+    <EditText
+        android:id="@+id/medicine_qty1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medicine_qty0"
+        android:layout_toRightOf="@+id/medicine_name1"
+        android:hint="Quantity"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/medicine_name2"
+        android:layout_below="@+id/medicine_name1"
+        android:hint="Medicine 3"/>
+
+    <EditText
+        android:id="@+id/medicine_qty2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medicine_qty1"
+        android:layout_toRightOf="@+id/medicine_name2"
+        android:hint="Quantity"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/medicine_name3"
+        android:layout_below="@+id/medicine_name2"
+        android:hint="Medicine 4"/>
+
+    <EditText
+        android:id="@+id/medicine_qty3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medicine_qty2"
+        android:layout_toRightOf="@+id/medicine_name1"
+        android:hint="Quantity"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/medicine_name4"
+        android:layout_below="@+id/medicine_name3"
+        android:hint="Medicine 5"/>
+
+    <EditText
+        android:id="@+id/medicine_qty4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medicine_qty3"
+        android:layout_toRightOf="@+id/medicine_name1"
+        android:hint="Quantity"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lat"
+        android:layout_below="@+id/medicine_name4"
+        android:text="28.63031"
+        android:hint="Latitude"/>
+
+    <EditText
+        android:id="@+id/lng"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medicine_qty4"
+        android:layout_toRightOf="@+id/medicine_name1"
+        android:text="77.372506"
+        android:hint="Longitude"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:text="Submit"
+        android:layout_below="@+id/lat"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/submit"
+        android:id="@+id/t1"
+        android:paddingTop="10dp"
+        android:hint="Answer will be here"/>
+
+</RelativeLayout>
