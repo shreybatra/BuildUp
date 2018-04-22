@@ -96,15 +96,15 @@ def preprocess():
 		
 
 
-		lat = float(request.json['lat'])
-		lng = float(request.json['lng'])
+		#lat = float(request.json['lat'])
+		#lng = float(request.json['lng'])
 
 
 		entry = {
 			'medicine_name':medicine_name,
-			'medicine_qty':medicine_qty,
-			'lat':lat,
-			'lng':lng
+			'medicine_qty':medicine_qty
+			#'lat':lat,
+			#'lng':lng
 		}
 
 		#print(entry)
