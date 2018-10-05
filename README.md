@@ -13,4 +13,3 @@ The Android Application will serve as the user interface asking the user for the
 * **Server**
 
 Here The Flask Application takes a request from the application checks if the medicine is available in the pharmacy within a max distance by searching through the datebase and if multiple entries are found it finds the best suitable discounts and price and orders the medicine to be delievered automatically. The functionality would be extended by retrieving a pic of transcript from the android, processing and gathering text and doing the neccesary step involved in ordering and delievering the medicine. The Flask Application in the repository is of the name *name.py*
-inding the best suitable discounts and price. 
